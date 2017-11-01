@@ -1,15 +1,21 @@
 import java.io.IOException;  
 class Testthrows1{  
-  void m()throws IOException{  
-    throw new IOException("device error");//checked exception  
+  void m()throws  ClassNotFoundException,IOException{
+    throw new IOException("device error");//checked exception
+//     throw new ArithmeticException();
   }  
-  void n()throws IOException{  
-    m();  
+  void n()throws IOException{
+    try {
+        m();
+    }
+    catch (ClassNotFoundException e){
+        System.out.println(e);
+    }
   }  
   void p(){  
    try{  
     n();  
-   }catch(Exception e){System.out.println("exception handled");}  
+   }catch(Exception e){System.out.println("exception handled"+e);}
   }  
   public static void main(String args[]){  
    Testthrows1 obj=new Testthrows1();  
