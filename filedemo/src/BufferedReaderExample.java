@@ -6,7 +6,7 @@ public class BufferedReaderExample {
   
           String i;
           while((i=br.readLine())!=null){
-          System.out.print(i);
+          System.out.println(i);
           }  
           br.close();    
           fr.close();    
