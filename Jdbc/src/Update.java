@@ -15,7 +15,7 @@ public class Update {
 
             User user=new User();
             user.setUserId(2);
-            user.setFname("pawan");
+            user.setFname("aman");
 
             Statement stmt = con.createStatement();
             String updateQuery="UPDATE `user` SET fname='"+user.getFname()+"'WHERE userId='"+user.getUserId()+"'";
