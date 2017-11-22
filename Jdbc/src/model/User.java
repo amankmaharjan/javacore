@@ -25,6 +25,13 @@ public class User {
         this.address = address;
     }
 
+    public User(String fname, String lname, int contact, String address) {
+        this.fname = fname;
+        this.lname = lname;
+        this.contact = contact;
+        this.address = address;
+    }
+
     public int getUserId() {
         return userId;
     }

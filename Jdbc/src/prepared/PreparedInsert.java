@@ -30,6 +30,19 @@ public class PreparedInsert {
             pstmt.setString(4, user.getAddress());
             int i = pstmt.executeUpdate();
 
+//            User user1 = new User();
+//            user1.setFname("rakj");
+//            user1.setLname("maharjan");
+//            user1.setAddress("manamaiju");
+//            user1.setContact(567);
+//
+//
+//            pstmt.setString(1, user1.getFname());
+//            pstmt.setString(2, user1.getLname());
+//            pstmt.setInt(3, user1.getContact());
+//            pstmt.setString(4, user1.getAddress());
+//            pstmt.executeUpdate();
+
             System.out.println(i + " records inserted");
 
 
